@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 btvObjects = cms.VPSet(
-       cms.PSet(
+"""       cms.PSet(
            pathNAME = cms.string("HLT_DoublePFJets100MaxDeta1p6_DoubleCaloBTagCSV_p33"),
            moduleNAME = cms.string("hltBTagCalo80x6CSVp0p92DoubleWithMatching"),
            label  = cms.string("CALO b-jet (double)"),
@@ -39,7 +39,8 @@ btvObjects = cms.VPSet(
            doPlotDXY    = cms.untracked.bool(False),
            doPlotDZ     = cms.untracked.bool(False),
            doPlotDiMass = cms.untracked.bool(True),
-       ),
+       ),"""
+       """
        cms.PSet(
            pathNAME = cms.string("HLT_DoublePFJets200_CaloBTagCSV_p33"),
            moduleNAME = cms.string("hltBTagCalo80x6CSVp0p92SingleWithMatching"),
@@ -78,7 +79,8 @@ btvObjects = cms.VPSet(
            doPlotDXY    = cms.untracked.bool(False),
            doPlotDZ     = cms.untracked.bool(False),
            doPlotDiMass = cms.untracked.bool(True),
-       ),
+       ),"""
+       """
        cms.PSet(
            pathNAME = cms.string("HLT_Mu12_DoublePFJets62MaxDeta1p6_DoubleCaloBTagCSV_p33"),
            moduleNAME = cms.string("hltBTagCalo30x8CSVp0p92DoubleWithMatching"),
@@ -117,7 +119,8 @@ btvObjects = cms.VPSet(
            doPlotDXY    = cms.untracked.bool(False),
            doPlotDZ     = cms.untracked.bool(False),
            doPlotDiMass = cms.untracked.bool(True),
-       ),
+       ),"""
+       """
        cms.PSet(
            pathNAME = cms.string("HLT_Mu12_DoublePFJets200_CaloBTagCSV_p33"),
            moduleNAME = cms.string("hltBTagCalo30x8CSVp0p92SingleWithMatching"),
@@ -157,7 +160,7 @@ btvObjects = cms.VPSet(
            doPlotDXY    = cms.untracked.bool(False),
            doPlotDZ     = cms.untracked.bool(False),
            doPlotDiMass = cms.untracked.bool(True),
-       ),
+       ),"""
        cms.PSet(
            pathNAME = cms.string("HLT_PFHT380_SixPFJet32_DoublePFBTagCSV_2p2"),
            moduleNAME = cms.string("hltBTagPFCSVp075Double"),

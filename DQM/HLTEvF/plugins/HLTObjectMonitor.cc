@@ -333,9 +333,11 @@ HLTObjectMonitor::HLTObjectMonitor(const edm::ParameterSet& iConfig)
   chargedCandToken_ = consumes<vector<reco::RecoChargedCandidate>>(
       edm::InputTag("hltL3NoFiltersNoVtxMuonCandidates", "", processName_));
   csvCaloTagsToken_ =
-      consumes<reco::JetTagCollection>(edm::InputTag("hltCombinedSecondaryVertexBJetTagsCalo", "", processName_));
+      //consumes<reco::JetTagCollection>(edm::InputTag("hltCombinedSecondaryVertexBJetTagsCalo", "", processName_));
+      consumes<reco::JetTagCollection>(edm::InputTag("hltDeepFlavourJetTags", "", processName_));
   csvPfTagsToken_ =
-      consumes<reco::JetTagCollection>(edm::InputTag("hltCombinedSecondaryVertexBJetTagsPF", "", processName_));
+      //consumes<reco::JetTagCollection>(edm::InputTag("hltCombinedSecondaryVertexBJetTagsPF", "", processName_));
+      consumes<reco::JetTagCollection>(edm::InputTag("hltParticleNetDiscriminatorsJetTags", "", processName_));    
   csvCaloJetsToken_ =
       consumes<vector<reco::CaloJet>>(edm::InputTag("hltSelector8CentralJetsL1FastJet", "", processName_));
   csvPfJetsToken_ = consumes<vector<reco::PFJet>>(edm::InputTag("hltPFJetForBtag", "", processName_));

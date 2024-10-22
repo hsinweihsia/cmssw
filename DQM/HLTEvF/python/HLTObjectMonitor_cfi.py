@@ -28,11 +28,18 @@ jetAk8_moduleName = "hltAK8SinglePFJet400TrimModMass30" # "hltAK8SinglePFJet360T
 rsq_mr_pathName = "HLT_RsqMR240_Rsq0p09_MR200"
 rsq_mr_moduleName = "hltRsqMR240Rsq0p09MR200"
 
-bJet_pathNameCalo = "HLT_DoubleJets100_DoubleBTagCSV_0p92_DoublePFJets128MaxDeta1p6" # "HLT_PFMET120_BTagCSV_p067"
-bJet_moduleNameCalo = "hltBTagCalo80x6CSVp0p92DoubleWithMatching" # "hltBTagCaloCSVp067Single"
+#bJet_pathNameCalo = "HLT_DoubleJets100_DoubleBTagCSV_0p92_DoublePFJets128MaxDeta1p6" # "HLT_PFMET120_BTagCSV_p067"
+#bJet_moduleNameCalo = "hltBTagCalo80x6CSVp0p92DoubleWithMatching" # "hltBTagCaloCSVp067Single"
 
-bJet_pathNamePF = "HLT_PFHT380_SixJet32_DoubleBTagCSV_p075" # "HLT_QuadPFJet_BTagCSV_p016_VBF_Mqq500"
-bJet_moduleNamePF = "hltBTagPFCSVp075Double" # "hltBTagPFCSVp016SingleWithMatching"
+#bJet_pathNamePF = "HLT_PFHT380_SixJet32_DoubleBTagCSV_p075" # "HLT_QuadPFJet_BTagCSV_p016_VBF_Mqq500"
+#bJet_moduleNamePF = "hltBTagPFCSVp075Double" # "hltBTagPFCSVp016SingleWithMatching"
+
+bJet_pathNameCalo = "HLT_DoublePFJets116MaxDeta1p6_DoublePFBTagDeepJet_p71" # "HLT_PFMET120_BTagCSV_p067"
+bJet_moduleNameCalo = "hltBTagPFDeepJet0p71DoubleJets30" # "hltBTagCaloCSVp067Single"
+
+bJet_pathNamePF = "HLT_PFHT400_SixPFJet32_PNet2BTagMean0p50" # "HLT_QuadPFJet_BTagCSV_p016_VBF_Mqq500"
+bJet_moduleNamePF = "hltPFCentralJetPt32PNet2BTagMean0p50" # "hltBTagPFCSVp016SingleWithMatching"
+
 
 #To avoid booking histogram, set pathName = cms.string("")
 
